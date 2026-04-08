@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professionnelle Construction | Toamasina</title>
+    <meta name="description" content="Expertise en bâtiment à Toamasina : Peinture, Enduits, Faux-plafonds et Gros Œuvre.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'deep-blue': '#1a365d',
+                        'sea-green': '#2d4a53',
+                        'off-white': '#f8f9fa',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        'custom': '8px',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #333;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.7)), url('https://images.unsplash.com/photo-1503387762-592dee58292b?auto=format&fit=crop&q=80&w=1920');
+            background-size: cover;
+            background-position: center;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .nav-link-hover {
+            position: relative;
+        }
+        .nav-link-hover::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #1a365d;
+            transition: width 0.3s ease;
+        }
+        .nav-link-hover:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-off-white">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold text-deep-blue tracking-tight">Professionnelle<span class="text-sea-green"> Construction</span></span>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#services" class="nav-link-hover text-sm font-medium text-gray-600 hover:text-deep-blue transition">Services</a>
+                    <a href="#difference" class="nav-link-hover text-sm font-medium text-gray-600 hover:text-deep-blue transition">Notre Différence</a>
+                    <a href="#estimateur" class="nav-link-hover text-sm font-medium text-gray-600 hover:text-deep-blue transition">Estimateur</a>
+                    <a href="#blog" class="nav-link-hover text-sm font-medium text-gray-600 hover:text-deep-blue transition">Blog</a>
+                    <a href="#contact" class="bg-deep-blue text-white px-6 py-2.5 rounded-custom text-sm font-semibold hover:bg-opacity-90 transition shadow-sm">Contactez-nous</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-gray-600 hover:text-deep-blue focus:outline-none">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-100 px-4 pt-2 pb-6 space-y-4 shadow-lg">
+            <a href="#services" class="block text-base font-medium text-gray-600 hover:text-deep-blue">Services</a>
+            <a href="#difference" class="block text-base font-medium text-gray-600 hover:text-deep-blue">Notre Différence</a>
+            <a href="#estimateur" class="block text-base font-medium text-gray-600 hover:text-deep-blue">Estimateur</a>
+            <a href="#blog" class="block text-base font-medium text-gray-600 hover:text-deep-blue">Blog</a>
+            <a href="#contact" class="block bg-deep-blue text-white px-6 py-3 rounded-custom text-center font-semibold">Contactez-nous</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-6xl font-bold text-deep-blue leading-tight mb-6">
+                    Votre Vision, Notre Expertise – <br>
+                    <span class="text-sea-green">Professionnelle Construction</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-700 mb-10 leading-relaxed">
+                    Peinture haut de gamme, Enduits de lissage & Gros Œuvre à Toamasina. <br class="hidden md:block">
+                    Qualité, Rapidité, Transparence.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#estimateur" class="inline-flex justify-center items-center px-8 py-4 bg-deep-blue text-white font-bold rounded-custom hover:shadow-xl transition-all transform hover:-translate-y-1">
+                        Obtenir une estimation rapide
+                    </a>
+                    <a href="#contact" class="inline-flex justify-center items-center px-8 py-4 bg-white text-deep-blue border-2 border-deep-blue font-bold rounded-custom hover:bg-gray-50 transition-all">
+                        Décrire mon projet
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- Decorative element -->
+        <div class="absolute bottom-0 right-0 w-1/3 h-full bg-deep-blue/5 -skew-x-12 transform translate-x-1/2 hidden lg:block"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-deep-blue mb-4">Nos Services</h2>
+                <div class="w-20 h-1 bg-sea-green mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Service 1 -->
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-sea-green/30 hover:shadow-lg transition-all group">
+                    <div class="w-14 h-14 bg-deep-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-deep-blue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-paint-roller text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-deep-blue mb-3">Peinture & Finitions</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Travail soigné pour intérieur et extérieur. Nous utilisons des produits adaptés au climat de Toamasina pour une durabilité maximale.
+                    </p>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-sea-green/30 hover:shadow-lg transition-all group">
+                    <div class="w-14 h-14 bg-deep-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-deep-blue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-fill-drip text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-deep-blue mb-3">Enduits Avant Peinture</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Enduit Val, Bessier, Plaste, etc. Une préparation parfaite des supports pour un rendu lisse et professionnel.
+                    </p>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-sea-green/30 hover:shadow-lg transition-all group">
+                    <div class="w-14 h-14 bg-deep-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-deep-blue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-layer-group text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-deep-blue mb-3">Faux-Plafonds Placoplatre</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Conception et mise en œuvre de plafonds suspendus modernes. Isolation thermique et esthétique contemporaine.
+                    </p>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="p-8 rounded-2xl border border-gray-100 hover:border-sea-green/30 hover:shadow-lg transition-all group">
+                    <div class="w-14 h-14 bg-deep-blue/10 rounded-xl flex items-center justify-center mb-6 group-hover:bg-deep-blue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-trowel-bricks text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-deep-blue mb-3">Gros Œuvre Béton Armé</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Construction de bâtiments civils de A à Z. Respect strict des normes de structure BA pour une sécurité totale.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notre Différence -->
+    <section id="difference" class="py-24 bg-off-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-deep-blue mb-4">Notre Différence</h2>
+                <p class="text-gray-600 italic">"Être professionnel, c'est notre éthique."</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-8 rounded-custom shadow-sm text-center">
+                    <div class="text-sea-green text-3xl mb-4"><i class="fa-solid fa-award"></i></div>
+                    <h4 class="font-bold text-deep-blue mb-2">Qualité</h4>
+                    <p class="text-sm text-gray-500">Priorité absolue sur les finitions et le choix des matériaux.</p>
+                </div>
+                <div class="bg-white p-8 rounded-custom shadow-sm text-center">
+                    <div class="text-sea-green text-3xl mb-4"><i class="fa-solid fa-bolt"></i></div>
+                    <h4 class="font-bold text-deep-blue mb-2">Rapidité</h4>
+                    <p class="text-sm text-gray-500">Délais maîtrisés grâce à une organisation rigoureuse.</p>
+                </div>
+                <div class="bg-white p-8 rounded-custom shadow-sm text-center">
+                    <div class="text-sea-green text-3xl mb-4"><i class="fa-solid fa-comments"></i></div>
+                    <h4 class="font-bold text-deep-blue mb-2">Accessibilité</h4>
+                    <p class="text-sm text-gray-500">Communication fluide et rapports réguliers sur le chantier.</p>
+                </div>
+                <div class="bg-white p-8 rounded-custom shadow-sm text-center">
+                    <div class="text-sea-green text-3xl mb-4"><i class="fa-solid fa-arrows-spin"></i></div>
+                    <h4 class="font-bold text-deep-blue mb-2">Flexibilité</h4>
+                    <p class="text-sm text-gray-500">Solutions sur mesure pour particuliers et professionnels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Estimateur de Prix -->
+    <section id="estimateur" class="py-24 bg-deep-blue text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Estimez le coût de votre projet en 1 clic</h2>
+            <p class="mb-12 text-blue-100">Entrez la surface totale de votre projet pour obtenir une fourchette indicative.</p>
+            
+            <div class="bg-white/10 p-8 rounded-2xl backdrop-blur-md border border-white/20">
+                <div class="flex flex-col md:flex-row gap-4 justify-center items-center">
+                    <div class="relative w-full max-w-xs">
+                        <input type="number" id="surface-input" placeholder="Surface (m²)" class="w-full px-6 py-4 bg-white text-deep-blue rounded-custom focus:outline-none focus:ring-2 focus:ring-sea-green text-lg font-semibold">
+                        <span class="absolute right-4 top-4 text-gray-400">m²</span>
+                    </div>
+                    <button onclick="calculatePrice()" class="w-full md:w-auto px-10 py-4 bg-sea-green text-white font-bold rounded-custom hover:bg-opacity-90 transition-all shadow-lg">
+                        Calculer
+                    </button>
+                </div>
+                
+                <div id="result-container" class="mt-10 hidden animate-fade-in">
+                    <p class="text-blue-200 text-sm uppercase tracking-widest mb-2">Estimation indicative</p>
+                    <div id="price-result" class="text-3xl md:text-5xl font-bold text-white mb-6"></div>
+                    <a href="#contact" class="inline-block text-sea-green bg-white px-6 py-2 rounded-full text-sm font-bold hover:bg-blue-50 transition">
+                        Affiner cette estimation gratuitement
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-deep-blue mb-4">Conseils d'Experts</h2>
+                <p class="text-gray-600">Tout ce qu'il faut savoir pour construire à Madagascar.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-off-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?auto=format&fit=crop&q=80&w=800" alt="Peinture bâtiment" class="w-full h-48 object-cover" referrerPolicy="no-referrer">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-deep-blue mb-3">Peinture & Climat à Toamasina</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            Toamasina est caractérisée par un climat tropical humide et des embruns salins. Choisir la bonne peinture est crucial...
+                        </p>
+                        <button onclick="openModal('article1')" class="text-sea-green font-bold text-sm hover:underline">Lire la suite</button>
+                    </div>
+                </article>
+
+                <!-- Article 2 -->
+                <article class="bg-off-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=800" alt="Faux plafond" class="w-full h-48 object-cover" referrerPolicy="no-referrer">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-deep-blue mb-3">Avantages du Placoplatre</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            Le Placoplatre révolutionne l'aménagement intérieur à Madagascar. Au-delà de l'aspect esthétique, il offre une isolation...
+                        </p>
+                        <button onclick="openModal('article2')" class="text-sea-green font-bold text-sm hover:underline">Lire la suite</button>
+                    </div>
+                </article>
+
+                <!-- Article 3 -->
+                <article class="bg-off-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?auto=format&fit=crop&q=80&w=800" alt="Chantier béton" class="w-full h-48 object-cover" referrerPolicy="no-referrer">
+                    <div class="p-6">
+                        <h3 class="font-bold text-lg text-deep-blue mb-3">Normes Béton Armé à Mada</h3>
+                        <p class="text-sm text-gray-600 mb-4 line-clamp-3">
+                            La solidité d'un bâtiment repose sur son squelette. Respecter les dosages de ciment et la qualité du ferraillage...
+                        </p>
+                        <button onclick="openModal('article3')" class="text-sea-green font-bold text-sm hover:underline">Lire la suite</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Form Section -->
+    <section id="contact" class="py-24 bg-off-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                <!-- Contact Info -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-deep-blue mb-6">Parlons de votre projet</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Basés à Toamasina, nous sommes un collectif de professionnels avec plus de 10 ans d'expérience. 
+                        Moi, <strong>Eddy Franck</strong>, je suis votre interlocuteur privilégié. 
+                        Professionnelle Construction est une éthique : transparence, dévouement et résultats.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <a href="tel:+261322727864" class="flex items-center gap-4 text-deep-blue hover:text-sea-green transition">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span class="font-semibold">+261 32 27 278 64</span>
+                        </a>
+                        <a href="mailto:Franckprofessional@gmail.com" class="flex items-center gap-4 text-deep-blue hover:text-sea-green transition">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <span class="font-semibold">Franckprofessional@gmail.com</span>
+                        </a>
+                        <a href="https://wa.me/261342727864" target="_blank" class="flex items-center gap-4 text-deep-blue hover:text-sea-green transition">
+                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-sm">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <span class="font-semibold">Discuter sur WhatsApp</span>
+                        </a>
+                    </div>
+
+                    <div class="mt-12 p-6 bg-sea-green/10 rounded-2xl border border-sea-green/20">
+                        <p class="text-sea-green font-bold">
+                            <i class="fa-solid fa-gift mr-2"></i>
+                            Offre spéciale : Devis et conception de dessins OFFERTS si le contrat nous est confié.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-xl">
+                    <form id="project-form" action="https://formspree.io/f/xanynqrw" method="POST" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Nom complet *</label>
+                                <input type="text" name="name" id="form-name" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-custom focus:outline-none focus:border-sea-green">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Téléphone *</label>
+                                <input type="tel" name="phone" id="form-phone" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-custom focus:outline-none focus:border-sea-green">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Email *</label>
+                            <input type="email" name="email" id="form-email" required class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-custom focus:outline-none focus:border-sea-green">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-gray-700 mb-2">Description du projet *</label>
+                            <textarea name="message" id="form-message" rows="5" required placeholder="Décrivez votre projet en quelques lignes..." class="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-custom focus:outline-none focus:border-sea-green"></textarea>
+                        </div>
+                        
+                        <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                            <button type="submit" class="flex-1 bg-deep-blue text-white font-bold py-4 rounded-custom hover:bg-opacity-90 transition shadow-lg">
+                                <i class="fa-solid fa-paper-plane mr-2"></i> Envoyer par Email
+                            </button>
+                            <button type="button" onclick="sendWhatsApp()" class="flex-1 bg-green-600 text-white font-bold py-4 rounded-custom hover:bg-green-700 transition shadow-lg">
+                                <i class="fa-brands fa-whatsapp mr-2"></i> Envoyer via WhatsApp
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-deep-blue text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="mb-8">
+                <span class="text-2xl font-bold tracking-tight">Professionnelle<span class="text-sea-green"> Construction</span></span>
+            </div>
+            <p class="text-blue-200 text-sm">
+                &copy; 2025 Professionnelle Construction - Toamasina. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Modal for Blog Articles -->
+    <div id="article-modal" class="fixed inset-0 bg-black/60 backdrop-blur-sm z-[100] hidden items-center justify-center p-4">
+        <div class="bg-white max-w-2xl w-full rounded-2xl overflow-hidden shadow-2xl relative">
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                <i class="fa-solid fa-xmark text-2xl"></i>
+            </button>
+            <div id="modal-content" class="p-8 md:p-12 overflow-y-auto max-h-[80vh]">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Price Estimator Logic
+        function calculatePrice() {
+            const surface = parseFloat(document.getElementById('surface-input').value);
+            const resultContainer = document.getElementById('result-container');
+            const priceResult = document.getElementById('price-result');
+            
+            if (!surface || surface <= 0) {
+                alert('Veuillez entrer une surface valide.');
+                return;
+            }
+
+            let minPrice, maxPrice;
+            
+            if (surface <= 50) {
+                minPrice = surface * 45000;
+                maxPrice = surface * 60000;
+            } else if (surface <= 100) {
+                minPrice = surface * 40000;
+                maxPrice = surface * 50000;
+            } else {
+                minPrice = surface * 35000;
+                maxPrice = surface * 45000;
+            }
+
+            const formatter = new Intl.NumberFormat('fr-FR');
+            priceResult.innerHTML = `${formatter.format(minPrice)} Ar - ${formatter.format(maxPrice)} Ar`;
+            
+            resultContainer.classList.remove('hidden');
+            resultContainer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+
+        // WhatsApp Send Logic
+        function sendWhatsApp() {
+            const name = document.getElementById('form-name').value;
+            const message = document.getElementById('form-message').value;
+            
+            if (!name || !message) {
+                alert('Veuillez remplir au moins votre nom et la description du projet.');
+                return;
+            }
+
+            const text = encodeURIComponent(`Bonjour Professionnelle Construction, je m'appelle ${name}. Voici mon projet : ${message}`);
+            window.open(`https://wa.me/261342727864?text=${text}`, '_blank');
+        }
+
+        // Blog Modal Logic
+        const articles = {
+            article1: {
+                title: "Les types de peinture adaptés au climat de Toamasina",
+                content: `
+                    <p class="mb-4">Toamasina est caractérisée par un climat tropical humide et des embruns salins. Choisir la bonne peinture est crucial pour la pérennité de vos façades et de vos intérieurs.</p>
+                    <p class="mb-4"><strong>La peinture acrylique :</strong> C'est souvent le meilleur choix pour les murs extérieurs à Madagascar. Sa composition à base d'eau lui permet de "respirer", laissant s'échapper l'humidité contenue dans les murs sans provoquer de décollement ou de cloques.</p>
+                    <p class="mb-4"><strong>La peinture glycéro :</strong> Plus résistante aux chocs et très lessivable, elle est idéale pour les boiseries et les zones à fort passage. Cependant, elle demande une préparation de support irréprochable car elle est imperméable à la vapeur d'eau.</p>
+                    <p class="mb-4"><strong>Conseil d'expert :</strong> À Toamasina, nous recommandons systématiquement l'application d'un fixateur de fond avant la peinture pour bloquer la porosité du support et garantir une adhérence parfaite malgré l'air marin.</p>
+                `
+            },
+            article2: {
+                title: "Faux-plafonds Placoplatre : Avantages et normes de pose",
+                content: `
+                    <p class="mb-4">Le Placoplatre a révolutionné l'aménagement intérieur à Madagascar. Il permet de transformer radicalement l'aspect d'une pièce en quelques jours seulement.</p>
+                    <p class="mb-4"><strong>Isolation thermique :</strong> C'est l'avantage numéro 1. Sous nos toits en tôle, la chaleur peut devenir étouffante. Le faux-plafond crée un matelas d'air qui, couplé à de la laine de verre, réduit considérablement la température intérieure.</p>
+                    <p class="mb-4"><strong>Esthétique :</strong> Intégration de spots LED, création de gorges lumineuses ou de niveaux différents... les possibilités sont infinies pour un rendu moderne et luxueux.</p>
+                    <p class="mb-4"><strong>Spécificité Toamasina :</strong> L'utilisation de plaques hydrofuges (Placo Marine, reconnaissables à leur couleur verte) est fortement conseillée. Elles résistent à l'humidité ambiante élevée et évitent les déformations dans le temps.</p>
+                `
+            },
+            article3: {
+                title: "Construire à Madagascar : L'importance des normes de structure",
+                content: `
+                    <p class="mb-4">La solidité d'un bâtiment repose sur son squelette en béton armé. À Madagascar, où les aléas climatiques (cyclones) sont fréquents, on ne peut pas transiger sur la structure.</p>
+                    <p class="mb-4"><strong>Le dosage du béton :</strong> Un bon béton de structure doit être dosé à 350kg/m³ de ciment. Un sous-dosage fragilise l'ensemble et réduit la durée de vie de l'ouvrage.</p>
+                    <p class="mb-4"><strong>Le ferraillage :</strong> La qualité de l'acier et son façonnage sont déterminants. Les cadres doivent être serrés au niveau des nœuds (jonctions poteaux-poutres) pour résister aux efforts de torsion.</p>
+                    <p class="mb-4"><strong>Protection contre la corrosion :</strong> À Toamasina, l'air salin attaque les aciers. Nous veillons à respecter un "enrobage" suffisant (au moins 3cm de béton autour du fer) pour empêcher la rouille de faire éclater le béton à long terme.</p>
+                `
+            }
+        };
+
+        function openModal(id) {
+            const modal = document.getElementById('article-modal');
+            const content = document.getElementById('modal-content');
+            const article = articles[id];
+            
+            content.innerHTML = `
+                <h2 class="text-2xl md:text-3xl font-bold text-deep-blue mb-6">${article.title}</h2>
+                <div class="prose prose-blue max-w-none text-gray-700 leading-relaxed">
+                    ${article.content}
+                </div>
+            `;
+            
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('article-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        window.onclick = function(event) {
+            const modal = document.getElementById('article-modal');
+            if (event.target == modal) {
+                closeModal();
+            }
+        }
+    </script>
+</body>
+</html>
